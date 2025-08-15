@@ -2,18 +2,12 @@ export async function linearSearch(
     array, 
     target,
     setCurrentComparing,
-    setIsSorting,//isactive flag
-    setSortedIndices,
-    setCurrentSwapping,
-    setCurrentMinIndex,
+    setIsSearching,
     setFoundIndex,
     animationSpeedMs
 ){
-    setIsSorting(true);
-    setCurrentSwapping([]);
-    setSortedIndices([]);
+    setIsSearching(true);
     setFoundIndex(null);
-    setCurrentMinIndex(null);
 
     for(let i = 0; i < array.length; i++) {
         setCurrentComparing([i]);
@@ -21,13 +15,13 @@ export async function linearSearch(
         if(array[i] === target) {
             setFoundIndex(i);
             setCurrentComparing([]);
-            setIsSorting(false);
+            setIsSearching(false);
             console.log(`Element ${target} found at index ${i}`);
             return;
         }
     }
     setCurrentComparing([]);
-    setIsSorting(false);
+    setIsSearching(false);
     setFoundIndex(null);
     console.log(`Element ${target} not found in the array`);
 }
