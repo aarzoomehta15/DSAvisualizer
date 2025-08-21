@@ -4,6 +4,9 @@ import {Link} from 'react-router-dom'
 const StartPage = () => {
   return (
     <div>
+      <div className='flex items-center justify-center'>
+        <img src = 'public\kitty.png' className='h-[100px] '></img>
+      </div>
       <h1 className = 'text-5xl font-extrabold text-custom-primary mb-12 text-center'
       >DSA Visualizer</h1>
 
