@@ -9,6 +9,7 @@ import {
   SWAP_COLOR,
   SORTED_COLOR,
   MIN_HIGHLIGHT_COLOR,
+  MID_COLOR,
 
   MERGE_NUM_BARS,
   MERGE_BOX_COLOR,
@@ -329,7 +330,7 @@ function SortingVisualizer() {
 
       {/* Merge sort */}
       <div className="mt-12 p-4 rounded-2xl shadow-lg border border-gray-200">
-        <h2 className="text-center text-xl font-bold mb-4">Merge Sort (Tree View)</h2>
+        <h2 className="text-xl font-bold mb-4 bg-[#F1C0E8] text-black w-fit rounded-xl px-8 justify-center mx-auto py-2">Merge Sort (Tree View)</h2>
 
         {/* top row */}
         <div className="flex justify-center gap-2 mb-4">

@@ -1,4 +1,4 @@
-export const NUM_BARS = 50
+export const NUM_BARS = 25
 export const ANIMATION_SPEED_MS = 20 
 
 // Aesthetic Colors from your palette
